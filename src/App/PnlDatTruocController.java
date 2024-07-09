@@ -138,6 +138,9 @@ public class PnlDatTruocController implements Initializable {
             DonDatPhong ddp = createThongTinDatTruoc();
 
             if (ddp != null) {
+                // Set trạng thái của đơn đặt phòng thành "Đặt Trước"
+                ddp.setTrangThaiDon("Đặt Trước");
+
                 // Add booking information to database
                 if (ddpDAO.addThongTinDatPhong(ddp)) {
                     // Show success message
@@ -163,6 +166,7 @@ public class PnlDatTruocController implements Initializable {
             e.printStackTrace();
         }
     }
+
     
     private DonDatPhong createThongTinDatTruoc() {
         try {
@@ -413,9 +417,9 @@ public class PnlDatTruocController implements Initializable {
                     return donDatPhong.getKhachHang().getHoTenKH().toLowerCase().contains(lowerCaseFilter);
                 case "Tim theo ten phong":
                     return donDatPhong.getPhong().getTenPhong().toLowerCase().contains(lowerCaseFilter);
-                case "Tim theo so đirn thoai":
+                case "Tim theo so đien thoai":
                     return donDatPhong.getKhachHang().getSoDienThoai().toLowerCase().contains(lowerCaseFilter);
-                case "Tim theo ngsy đst":
+                case "Tim theo ngay đat":
                     return donDatPhong.getThoiGianVao().toString().toLowerCase().contains(lowerCaseFilter);
                 default:
                     return false;

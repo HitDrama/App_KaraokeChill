@@ -204,7 +204,7 @@ public class DonDatPhongDAO {
 
     public List<DonDatPhong> getDanhSachDonDatTruoc() {
         List<DonDatPhong> dsDonDatPhong = new ArrayList<>();
-        String sql = "SELECT * FROM Room_reservation WHERE OrderStatus = N'Dat Truoc' OR OrderStatus = N'Hủy Đơn'";
+        String sql = "SELECT * FROM Room_reservation WHERE OrderStatus = N'Dat Truoc' OR OrderStatus = N'Huy Don'";
 
         try (Connection con = MSSQLConnection.getJDBCConnection();
              PreparedStatement prepareStatement = con.prepareStatement(sql);

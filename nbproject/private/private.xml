@@ -4,15 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/App/PnlDatTruocController.java</file>
-            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/entity/Phong.java</file>
-            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/css/demo.css</file>
+            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/dao/ChiTietHoaDonDao.java</file>
             <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/dao/PhongDAO.java</file>
-            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/nbproject/jfx-impl.xml</file>
-            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/App/PnlQuanLyPhongController.java</file>
-            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/dao/LoaiPhongDAO.java</file>
-            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/dao/KhachHangDAO.java</file>
-            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/App/PnlDatPhongController.java</file>
-            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/App/PnlQuanLyKhachHangController.java</file>
+            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/start/Main.java</file>
+            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/dao/HoaDonDao.java</file>
+            <file>file:/C:/Users/nhanp/OneDrive/Máy%20tính/KaraokeChill/src/dao/DonDatPhongDAO.java</file>
         </group>
     </open-files>
 </project-private>
