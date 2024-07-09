@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="451.0" styleClass="left-form" stylesheets="@../css/demo.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chay.DialogDangNhapController">
+   <children>
+      <AnchorPane layoutX="46.0" layoutY="75.0" prefHeight="420.0" prefWidth="358.0" styleClass="bg-white-2" stylesheets="@../css/demo.css">
+         <children>
+            <FontAwesomeIcon glyphName="USER" layoutX="151.0" layoutY="76.0" size="6EM" />
+            <TextField fx:id="txtUsername" layoutX="112.0" layoutY="137.0" prefHeight="28.0" prefWidth="201.0" styleClass="textfield" stylesheets="@../css/demo.css" />
+            <PasswordField fx:id="txtPassword" layoutX="111.0" layoutY="206.0" prefHeight="28.0" prefWidth="202.0" styleClass="textfield" stylesheets="@../css/demo.css" />
+            <Label layoutX="42.0" layoutY="157.0" text="USERNAME">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="225.0" text="PASSWORD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnDangNhap" layoutX="74.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnDangNhap" prefHeight="26.0" prefWidth="66.0" styleClass="bg-white" stylesheets="@../css/demo.css" text="Login" />
+            <Button fx:id="btnThoat" layoutX="206.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnThoat" prefHeight="26.0" prefWidth="66.0" styleClass="bg-white" stylesheets="@../css/demo.css" text="Cancel" />
+            <Label layoutX="151.0" layoutY="94.0" text="LOGIN">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblQuenMatKhau" layoutX="127.0" layoutY="332.0" onMouseClicked="#lblQuenMatKhau" prefHeight="18.0" prefWidth="106.0" text="Forget Password?" />
+            <Button fx:id="btncardID" layoutX="112.0" layoutY="367.0" mnemonicParsing="false" onAction="#btncardID" prefHeight="26.0" prefWidth="114.0" styleClass="bg-white" stylesheets="@../css/demo.css" text=" Login Card " />
+         </children>
+      </AnchorPane>
+      <Label layoutX="117.0" layoutY="22.0" text="KARAOKE MANAGEMENT">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8421052694320679" green="0.06861598789691925" blue="0.7518648505210876" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

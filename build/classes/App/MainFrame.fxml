@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="848.0" prefWidth="1205.0" stylesheets="@../css/demo.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.MainFrameController">
+   <children>
+      <AnchorPane prefHeight="848.0" prefWidth="235.0" styleClass="left-form" stylesheets="@../css/demo.css">
+         <children>
+            <Label layoutX="65.0" layoutY="20.0" prefHeight="30.0" prefWidth="133.0" text="KARAOKECHILL">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.39393940884055517">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9894737005233765" green="0.693608820438385" blue="0.35547757148742676" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8106852769851685" green="0.07199999690055847" blue="0.8999999761581421" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <FontAwesomeIcon fx:id="iconNhanVien" glyphName="USERS" layoutX="7.0" layoutY="312.0" selectionFill="#262222" size="3EM" text="">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.5719697339968248">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9058823585510254" green="0.8078431487083435" blue="0.07058823853731155" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5686274766921997" green="0.10588235408067703" blue="0.8901960849761963" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <Button fx:id="btn_NhanVien" layoutX="47.0" layoutY="284.0" mnemonicParsing="false" onAction="#btn_NhanVien" prefHeight="27.0" prefWidth="181.0" styleClass="nav-btn" stylesheets="@../css/demo.css" text="Employee management">
+               <font>
+                  <Font name="Corbel Light" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.3409090782656814" startX="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0623781681060791" green="0.8421052694320679" blue="0.3872644603252411" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7529411911964417" green="0.8901960849761963" blue="0.10588235408067703" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <FontAwesomeIcon fx:id="iconaccount" glyphName="USER" layoutX="13.0" layoutY="375.0" selectionFill="#efd7d7" size="3EM">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.5719697339968248">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9058823585510254" green="0.8078431487083435" blue="0.07058823853731155" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5686274766921997" green="0.10588235408067703" blue="0.8901960849761963" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <Button fx:id="btn_TaiKhoan" layoutX="53.0" layoutY="348.0" mnemonicParsing="false" onAction="#btn_TaiKhoan" prefHeight="27.0" prefWidth="169.0" styleClass="nav-btn" stylesheets="@../css/demo.css" text="Account management">
+               <textFill>
+                  <LinearGradient endX="0.6022727272727273" endY="0.3409090782656814" startX="0.11742425326145056">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0623781681060791" green="0.8421052694320679" blue="0.3872644603252411" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9058823585510254" green="0.8078431487083435" blue="0.07058823853731155" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="btn_SanPham" layoutX="53.0" layoutY="419.0" mnemonicParsing="false" onAction="#btn_SanPham" prefHeight="27.0" prefWidth="170.0" styleClass="nav-btn" stylesheets="@../css/demo.css" text="Product management" />
+            <Button fx:id="btn_KhachHang" layoutX="47.0" layoutY="500.0" mnemonicParsing="false" onAction="#btn_KhachHang" prefHeight="27.0" prefWidth="182.0" styleClass="nav-btn" stylesheets="@../css/demo.css" text="Customer management" />
+            <Button fx:id="btn_LoaiPhong" layoutX="45.0" layoutY="573.0" mnemonicParsing="false" onAction="#btn_LoaiPhong" prefHeight="27.0" prefWidth="170.0" styleClass="nav-btn" stylesheets="@../css/demo.css" text="Room management" />
+            <Button fx:id="btn_DatPhong" layoutX="47.0" layoutY="647.0" mnemonicParsing="false" onAction="#btn_DatPhong" prefHeight="27.0" prefWidth="170.0" styleClass="nav-btn" stylesheets="@../css/demo.css" text="Booking management" />
+            <Button layoutX="64.0" layoutY="721.0" mnemonicParsing="false" onAction="#btn_ThanhToan" prefHeight="26.0" prefWidth="146.0" styleClass="nav-btn" stylesheets="@../css/demo.css" text="Pay" />
+            <Button fx:id="btnthoat" layoutX="65.0" layoutY="777.0" mnemonicParsing="false" onAction="#btnThoat" prefHeight="28.0" prefWidth="91.0" styleClass="logout-btn" stylesheets="@../css/demo.css" text="LOGOUT">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.3409090782656814" startX="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0623781681060791" green="0.8421052694320679" blue="0.3872644603252411" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.12631578743457794" green="0.1208421066403389" blue="0.11368420720100403" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Line endX="100.0" layoutX="111.0" layoutY="66.0" startX="-100.0">
+               <stroke>
+                  <LinearGradient endX="0.6022727272727273" endY="0.3409090782656814" startX="0.11742425326145056">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0623781681060791" green="0.8421052694320679" blue="0.3872644603252411" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9058823585510254" green="0.8078431487083435" blue="0.07058823853731155" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <FontAwesomeIcon glyphName="BARS" layoutX="13.0" layoutY="446.0" size="3EM">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.39393940884055517">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9058823585510254" green="0.8078431487083435" blue="0.07058823853731155" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.17935532331466675" green="0.8899999856948853" blue="0.10679999738931656" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon glyphName="CHECK" layoutX="11.0" layoutY="748.0" size="3EM">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.39393940884055517">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9058823585510254" green="0.8078431487083435" blue="0.07058823853731155" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8901960849761963" green="0.29019609093666077" blue="0.10588235408067703" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon glyphName="PHONE" layoutX="7.0" layoutY="599.0" size="3EM">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.39393940884055517">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9058823585510254" green="0.8078431487083435" blue="0.07058823853731155" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8901960849761963" green="0.29019609093666077" blue="0.10588235408067703" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon glyphName="ENVELOPE" layoutX="5.0" layoutY="675.0" size="3EM" text="">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.39393940884055517">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9058823585510254" green="0.8078431487083435" blue="0.07058823853731155" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8901960849761963" green="0.29019609093666077" blue="0.10588235408067703" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon glyphName="CLOUD" layoutX="6.0" layoutY="526.0" size="3EM">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.39393940884055517">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9058823585510254" green="0.8078431487083435" blue="0.07058823853731155" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8901960849761963" green="0.29019609093666077" blue="0.10588235408067703" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <ImageView fitHeight="65.0" fitWidth="79.0" layoutX="6.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo_main.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblImage" layoutX="61.0" layoutY="87.0" prefHeight="100.0" prefWidth="100.0" />
+            <Label fx:id="lblTen" layoutX="30.0" layoutY="201.0" styleClass="nav-btn" stylesheets="@../css/demo.css" text="Name: " />
+            <Label fx:id="lblChucVu" layoutX="30.0" layoutY="226.0" styleClass="nav-btn" stylesheets="@../css/demo.css" text="Role:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="235.0" prefHeight="73.0" prefWidth="971.0" styleClass="bg-white-3" stylesheets="@../css/demo.css">
+         <children>
+            <MenuButton fx:id="mnTaiKhoan" layoutX="55.0" layoutY="26.0" mnemonicParsing="false" styleClass="nav-btn" stylesheets="@../css/demo.css" text="&lt;Dynamic&gt;">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+               <items>
+                  <MenuItem fx:id="mnXemTaiKhoan" mnemonicParsing="false" onAction="#mnXemTaiKhoan" text=" View account" />
+                  <MenuItem fx:id="mnDoiMatKhau" mnemonicParsing="false" onAction="#mnDoiMatKhau" text="Change password" />
+               </items>
+            </MenuButton>
+            <MenuButton fx:id="mnTroGiup" layoutX="209.0" layoutY="26.0" mnemonicParsing="false" styleClass="nav-btn" stylesheets="@../css/demo.css" text="Helps">
+               <items>
+                  <MenuItem fx:id="mnGioiThieu" mnemonicParsing="false" onAction="#mnGioiThieu" text="Introduce" />
+               </items>
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </MenuButton>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="21.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/dynamic.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="185.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Trogiup.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="mainfrom" layoutX="246.0" layoutY="84.0" prefHeight="750.0" prefWidth="950.0" />
+   </children>
+</AnchorPane>

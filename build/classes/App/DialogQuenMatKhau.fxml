@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="349.0" prefWidth="600.0" styleClass="bg-white-3" stylesheets="@../css/demo.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.DialogQuenMatKhauController">
+   <children>
+      <Label layoutX="224.0" layoutY="14.0" text="FORGET PASWORD" textFill="#c91414">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="63.0" text="Username :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="41.0" layoutY="119.0" />
+      <Label layoutX="48.0" layoutY="182.0" text="Answer :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txtTenDN" layoutX="151.0" layoutY="59.0" prefHeight="26.0" prefWidth="300.0" />
+      <TextField fx:id="txtCauHoi" layoutX="151.0" layoutY="115.0" prefHeight="26.0" prefWidth="300.0" />
+      <TextField fx:id="txtCauTraLoi" layoutX="150.0" layoutY="178.0" prefHeight="26.0" prefWidth="300.0" />
+      <TextField fx:id="txtMatKhauMoi" layoutX="151.0" layoutY="244.0" prefHeight="26.0" prefWidth="300.0" />
+      <Button fx:id="btnTim" layoutX="473.0" layoutY="60.0" mnemonicParsing="false" onAction="#btnTim" prefHeight="28.0" prefWidth="90.0" styleClass="bg-white-4" stylesheets="@../css/demo.css" text="find" />
+      <Button fx:id="btnLamMoi" layoutX="473.0" layoutY="114.0" mnemonicParsing="false" onAction="#btnLamMoi" prefHeight="28.0" prefWidth="90.0" styleClass="bg-white-4" stylesheets="@../css/demo.css" text="Refresh" />
+      <Button fx:id="btnLuu" layoutX="150.0" layoutY="298.0" mnemonicParsing="false" onAction="#btnLuu" prefHeight="28.0" prefWidth="90.0" styleClass="bg-white-4" stylesheets="@../css/demo.css" text="Save" />
+      <Button fx:id="btnTroLai" layoutX="306.0" layoutY="298.0" mnemonicParsing="false" onAction="#btnTroLai" prefHeight="28.0" prefWidth="90.0" styleClass="bg-white-4" stylesheets="@../css/demo.css" text="return" />
+      <Label layoutX="48.0" layoutY="248.0" text="New Password :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="119.0" text="Password :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

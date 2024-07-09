@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainfrom" prefHeight="750.0" prefWidth="950.0" styleClass="bg-white-3" stylesheets="@../css/demo.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.PnlQuanLyTaiKhoanController">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="9.0" prefHeight="432.0" prefWidth="923.0" styleClass="left-from-1" stylesheets="@../css/demo.css">
+         <children>
+            <Button fx:id="btnThemTK" defaultButton="true" layoutX="33.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnThemTK" prefHeight="26.0" prefWidth="64.0" styleClass="nav-btn-9" stylesheets="@../css/demo.css" text="Add">
+               <graphic>
+                  <ImageView fx:id="imgthem" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/plus_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnXoaTK" defaultButton="true" layoutX="138.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnXoaTK" prefHeight="28.0" prefWidth="79.0" styleClass="nav-btn-9" stylesheets="@../css/demo.css" text="Delete">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/delete_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnLamMoi" defaultButton="true" layoutX="249.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnLamMoi" styleClass="nav-btn-9" stylesheets="@../css/demo.css" text="Refresh">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/refresh_16px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="505.0" layoutY="264.0" text="Card Number:" />
+            <TextField fx:id="txtCard" layoutX="593.0" layoutY="260.0" />
+            <TextField fx:id="txtTim" layoutX="599.0" layoutY="149.0" prefHeight="26.0" prefWidth="215.0" />
+            <ComboBox fx:id="cmbTim" layoutX="599.0" layoutY="94.0" prefHeight="26.0" prefWidth="215.0" />
+            <Label layoutX="505.0" layoutY="8.0" text="Find Account">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="505.0" layoutY="51.0" text="Choose username" />
+            <Label layoutX="499.0" layoutY="216.0" text="Add Card">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Line endX="66.00003051757812" endY="313.33331298828125" layoutX="404.0" layoutY="120.0" startX="66.00003051757812" startY="-120.0" />
+            <Line endX="511.33331298828125" endY="-36.333343505859375" layoutX="410.0" layoutY="236.0" startX="59.500030517578125" startY="-36.333343505859375" />
+         </children></AnchorPane>
+      <TextField fx:id="txtTenDN" layoutX="123.0" layoutY="53.0" prefHeight="26.0" prefWidth="224.0" stylesheets="@../css/demo.css" />
+      <TextField fx:id="txtMatKhau" layoutX="123.0" layoutY="102.0" prefHeight="26.0" prefWidth="224.0" stylesheets="@../css/demo.css" />
+      <TextArea fx:id="txaCauTraLoi" layoutX="123.0" layoutY="315.0" prefHeight="68.0" prefWidth="231.0" />
+      <ComboBox fx:id="cmbVaiTro" layoutX="123.0" layoutY="158.0" prefHeight="26.0" prefWidth="224.0" />
+      <ComboBox fx:id="cmbMaNhanVien" layoutX="123.0" layoutY="213.0" prefHeight="26.0" prefWidth="224.0" />
+      <ComboBox fx:id="cmbListCauHoi" layoutX="123.0" layoutY="268.0" prefHeight="26.0" prefWidth="224.0" />
+      <Label layoutX="20.0" layoutY="14.0" text="Account information">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="67.0" text="Username :" />
+      <Label layoutX="18.0" layoutY="115.0" text="Password :" />
+      <Label layoutX="24.0" layoutY="171.0" text="Role :" />
+      <Label layoutX="46.0" layoutY="189.0" />
+      <Label layoutX="24.0" layoutY="226.0" text="Staff code :" />
+      <Label layoutX="23.0" layoutY="281.0" text="Question :" />
+      <Label layoutX="25.0" layoutY="324.0" text="Reply :" />
+      <AnchorPane layoutX="14.0" layoutY="450.0" prefHeight="289.0" prefWidth="923.0" styleClass="left-from-1" stylesheets="@../css/demo.css">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" text="Account List">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableView" layoutX="14.0" layoutY="38.0" prefHeight="237.0" prefWidth="890.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

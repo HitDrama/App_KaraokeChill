@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="216.0" prefWidth="600.0" styleClass="bg-white-3" stylesheets="@../css/demo.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.InitPreloaderController">
+   <children>
+      <Label fx:id="lblLoading" layoutX="14.0" layoutY="185.0" text="loading..." AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ProgressBar layoutX="15.0" layoutY="156.0" prefWidth="200.0" stylesheets="@../css/demo.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Label alignment="CENTER" layoutX="140.0" layoutY="28.0" prefHeight="71.0" prefWidth="413.0" text="KARAOKECHILL APP KARAOKE" textFill="WHITE" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="47.33333333333326" AnchorPane.topAnchor="28.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="94.0" fitWidth="86.0" layoutX="54.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo_loading_1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="165.0" layoutY="86.0" text="Group: 4      Class: T5-2308M0       FPT.AptechHCM " textFill="#ebd5d5">
+         <font>
+            <Font name="Barlow Condensed Medium" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="165.0" layoutY="108.0" text="Copyright ©  2024 - 2025" textFill="#ebd5d5">
+         <font>
+            <Font name="Barlow Condensed Medium" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

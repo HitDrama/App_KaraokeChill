@@ -1,0 +1,94 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 2, 2024, 10:10:01 PM
+    Author     : Chi
+*/
+.bg-white{
+    -fx-background-radius: 20px 5px 20px 5px;
+    
+}
+.bg-white-1{
+    -fx-background-color:#cccccc;
+
+}
+.bg-white-2{
+    -fx-background-color:linear-gradient(to bottom right, #9999ff ,#e31b85);
+     -fx-background-radius: 20px 5px 20px 5px;
+    
+
+}
+.bg-white-3{
+    -fx-background-color:linear-gradient(to bottom right, #9999ff ,#e31b85);
+     
+    
+    
+}
+.left-from-1{
+    -fx-background-color:#e2dede;
+-fx-background-radius: 20px;
+-fx-cursor:hand;
+}
+
+.left-form{
+    
+    -fx-background-color:linear-gradient(to bottom right, #2f3f89,#751296);
+    
+}
+.textfield{
+    -fx-background-color:transparent;
+    -fx-border-color:#333333;
+    -fx-border-width: 0px 0px .8px 0px;
+    -fx-font-size: 13px;
+}
+.textfield:focused{
+    -fx-border-color: #333333;
+    -fx-border-width: 0px 0px 1.5px 0px;
+}
+.login-btn{
+    -fx-background-color: linear-gradient(to bottom right, #d914d0,#d91639);
+}
+.login-btn-1:hover{
+    -fx-background-color: linear-gradient(to bottom right, #649de4,#3e78a7);
+}
+.login-btn-1{
+    -fx-background-color:#cccccc;
+    -fx-background-radius: 20px 5px 20px 5px;
+    -fx-text-fill:#333333;
+    -fx-font-size:14px;
+    -fx-cursor: hand;
+    -fx-font-family:"Tahoma";
+}
+.nav-btn{
+-fx-background-color: transparent;
+-fx-cursor:hand;
+-fx-text-fill:#e7ce12;
+-fx-font-size:15px;
+-fx-font-family: "Arial";
+-fx-alignment:CENTER_LEFT;
+}
+.nav-btn:hover{
+  -fx-background-color:#e34a1b;
+}
+
+
+.logout-btn{
+-fx-background-color:#e34a1b;
+-fx-background-radius: 20px;
+-fx-cursor:hand;
+}
+.logout-btn:hover{
+-fx-background-color:#e7ce12;
+}
+.logout-btn-1{
+    -fx-background-color:#33ffcc;
+}
+.nav-btn-9{
+    -fx-background-color:#e34fe0;
+    -fx-background-radius: 20px;
+}
+.nav-btn-9:hover{
+    -fx-background-color:#fd8bfb;
+}

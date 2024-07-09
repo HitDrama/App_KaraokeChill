@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.DialogDanhSachHoaDonController">
+   <children>
+      <Label layoutX="323.0" layoutY="24.0" text="Quan Ly Hoa Don">
+         <font>
+            <Font name="Bauhaus 93" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbTimHD" layoutX="173.0" layoutY="53.0" prefHeight="20.0" prefWidth="159.0" />
+      <TextField fx:id="txtTimKiem" layoutX="364.0" layoutY="53.0" prefHeight="25.0" prefWidth="188.0" />
+      <Button fx:id="btnLammoi" layoutX="591.0" layoutY="53.0" mnemonicParsing="false" onAction="#btnLammoi" text="Lam moi" />
+      <Label layoutX="30.0" layoutY="92.0" text="Danh sách hóa đơn" />
+      <Label layoutX="30.0" layoutY="267.0" text="Chi tiết hóa đơn" />
+      <Button fx:id="btnXuatHoaDon" layoutX="332.0" layoutY="451.0" mnemonicParsing="false" onAction="#btnXuatHoaDon" text="Xuat hoa don" />
+      <Button fx:id="btnQuayLai" layoutX="492.0" layoutY="451.0" mnemonicParsing="false" onAction="#btnQuayLai" text="Quay lai" />
+      <ScrollPane layoutX="24.0" layoutY="117.0" prefHeight="141.0" prefWidth="756.0">
+         <content>
+            <TableView fx:id="tblHoaDon" onMouseClicked="#tblHoaDon" prefHeight="139.0" prefWidth="740.0">
+              <columns>
+                <TableColumn fx:id="colMaHoaDon" prefWidth="86.6666864156723" text="Ma hoa don" />
+                <TableColumn fx:id="colNhanVienLap" prefWidth="158.6667022705078" text="Nhan vien lap" />
+                  <TableColumn fx:id="colTenKhachHang" prefWidth="172.66661071777344" text="Ten Khach Hang" />
+                  <TableColumn fx:id="colNgayLapHoaDon" prefWidth="202.0" text="Ngay lap hoa don" />
+                  <TableColumn fx:id="colTongTien" prefWidth="122.0" text="Tong tien" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="24.0" layoutY="294.0" prefHeight="141.0" prefWidth="756.0">
+         <content>
+            <TableView fx:id="tblChiTiet" prefHeight="139.0" prefWidth="740.0">
+               <columns>
+                  <TableColumn fx:id="colSanPham" prefWidth="142.0000604391098" text="San Pham" />
+                  <TableColumn fx:id="colSoLuong" prefWidth="173.333251953125" text="So luong" />
+                  <TableColumn fx:id="colDonGia" prefWidth="203.99996948242188" text="Don gia" />
+                  <TableColumn fx:id="colThanhTien" prefWidth="222.66677856445312" text="Thanh tien" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
