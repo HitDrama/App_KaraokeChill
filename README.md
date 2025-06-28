@@ -1,8 +1,24 @@
-# **KaraokeChill**
+<p align="center">
+  <img src="https://github.com/HitDrama/App_KaraokeChill/blob/master/src/image/Karaoke%20Chill.png" alt="KaraokeChill Banner">
+</p>
+
+# <p align="center">KaraokeChill</p>
 
 ## **Introduction**
 
 **KaraokeChill** is a karaoke database management application developed by Group 04 from class T5.2308.M0 at ACE-THUDUC-1-FPT Center. This project aims to provide a user-friendly platform for managing karaoke tracks and related information easily and efficiently.
+
+## Demo
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/1Bgfo6-KXSQ10Jc_uNQq-hkmsqdyQfhLZ/view?usp=sharing">
+    <img src="https://github.com/HitDrama/App_KaraokeChill/blob/master/src/image/KaraokeChill.gif" alt="KaraokeChill Demo GIF">
+  </a>
+</p>
+
+<p align="center">
+  *Nhấn vào GIF để xem video demo đầy đủ hơn!*
+</p>
 
 ## **Main Features**
 
@@ -95,4 +111,4 @@
 
 ## **Contact**
 
-If you have any questions or suggestions, please contact us via email: [group04@example.com](mailto:group04@example.com).
+If you have any questions or suggestions, please contact us via email: [danhtonhan2002@gmail.com](mailto:group04@example.com).
